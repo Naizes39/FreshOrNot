@@ -27,7 +27,7 @@ The project consists of the following components:
 ## Run the Django server:
   - cd FreshOrNot/web_app
   - python manage.py runserver
-# Open a web browser and go to http://127.0.0.1:8000 to access the application.
+## Open a web browser and go to http://127.0.0.1:8000 to access the application.
 
 ## Usage
   - Drag and drop or select an image file that you want to classify.
