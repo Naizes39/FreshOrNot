@@ -33,3 +33,9 @@ The project consists of the following components:
   - Drag and drop or select an image file that you want to classify.
   - Click on the "Check" button.
   - View the classification results, including whether the object is fresh or not.
+
+## Credits
+
+The dataset used for training contains images of various fruits and vegetables in two categories: healthy and rotten.
+It was sourced from Kaggle, specifically the Fruit and Vegetable Disease dataset by MUHAMMAD SUBHAN.
+https://www.kaggle.com/datasets/muhammad0subhan/fruit-and-vegetable-disease-healthy-vs-rotten/data
