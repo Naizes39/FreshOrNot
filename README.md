@@ -15,16 +15,16 @@ The project consists of the following components:
 
 ## Installation
 
-# To run the project locally, follow these steps:
+## To run the project locally, follow these steps:
 
-# Clone the repository:
+## Clone the repository:
   - git clone https://github.com/Naizes39/FreshOrNot.git
   - cd FreshOrNot/web_app
   
-# Intsall requirements.txt:
+## Intsall requirements.txt:
   - pip install -r requirements.txt
 
-# Run the Django server:
+## Run the Django server:
   - cd FreshOrNot/web_app
   - python manage.py runserver
 # Open a web browser and go to http://127.0.0.1:8000 to access the application.
