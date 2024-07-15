@@ -8,27 +8,28 @@ This project utilizes a TensorFlow model for image classification through a Djan
 
 The project consists of the following components:
 
-- ** api: Contain fastapi and tfserving files.
-- ** models: Contain trained tensorflow model.
-- ** web_app: Contain django web app using tensorflow model.
-- ** fresh_or_not.ipynb: Jupyter Notebook with model training.
+-  api: Contain fastapi and tfserving files.
+-  models: Contain trained tensorflow model.
+-  web_app: Contain django web app using tensorflow model.
+-  fresh_or_not.ipynb: Jupyter Notebook with model training.
 
-##Installation
-To run the project locally, follow these steps:
+## Installation
 
-Clone the repository:
-  git clone https://github.com/Naizes39/FreshOrNot.git
-  cd FreshOrNot/web_app
+# To run the project locally, follow these steps:
+
+# Clone the repository:
+  - git clone https://github.com/Naizes39/FreshOrNot.git
+  - cd FreshOrNot/web_app
   
-Intsall requirements.txt:
-  pip install -r requirements.txt
+# Intsall requirements.txt:
+  - pip install -r requirements.txt
 
-Run the Django server:
-  cd FreshOrNot/web_app
-  python manage.py runserver
-Open a web browser and go to http://127.0.0.1:8000 to access the application.
+# Run the Django server:
+  - cd FreshOrNot/web_app
+  - python manage.py runserver
+# Open a web browser and go to http://127.0.0.1:8000 to access the application.
 
-##Usage
-  Drag and drop or select an image file that you want to classify.
-  Click on the "Check" button.
-  View the classification results, including whether the object is fresh or not.
+## Usage
+  - Drag and drop or select an image file that you want to classify.
+  - Click on the "Check" button.
+  - View the classification results, including whether the object is fresh or not.
