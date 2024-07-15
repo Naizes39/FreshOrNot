@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Fresh Or Not</title>
+</head>
+<body>
+    <form action="{% url 'classify' %}" method="post" enctype="multipart/form-data" class="hero" id="upload-form">
+        {% csrf_token %}
+        <h2 class="web-title" id="web-title">
+            {% if result %}
+                Your {{ result.class }} is <span class="{% if result.state == 'Rotten' %}rotten{% else %}healthy{% endif %}">{{ result.state }}</span>
+            {% else %}
+                Fresh Or Not?
+            {% endif %}
+        </h2>
+        <label for="input-file" id="drop-area">
+            <input type="file" name="image" accept="image/*" id="input-file" hidden>
+            <div id="img-view">
+                <img src="{% static 'icon.png' %}">
+                <p>Drag and drop or click here <br> to upload image</p>
+                <span>Upload any images from desktop</span>
+            </div>
+        </label>
+        <button class="button-64" type="submit" role="button"><span class="text">Check</span></button>
+    </form>
+
+    <script src="{% static 'script.js' %}"></script>
+    <script>
+        window.onload = function() {
+            if (sessionStorage.getItem('formSubmitted') === 'true') {
+                sessionStorage.removeItem('formSubmitted');
+            } else {
+                const webTitle = document.getElementById('web-title');
+                webTitle.innerHTML = 'Fresh Or Not?';
+            }
+        };
+
+        document.getElementById('upload-form').onsubmit = function() {
+            sessionStorage.setItem('formSubmitted', 'true');
+        };
+    </script>
+</body>
+</html>
